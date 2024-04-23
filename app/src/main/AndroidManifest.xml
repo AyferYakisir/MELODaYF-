@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Proje"
+        tools:targetApi="31">
+        <activity
+            android:name=".listeGoruntulemeAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".listeAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".ListeOlusturmaEkrani"
+            android:exported="false" />
+        <activity
+            android:name=".calmaListesiEkrani"
+            android:exported="false" />
+        <activity
+            android:name=".sarkilarEkrani"
+            android:exported="false" />
+        <activity
+            android:name=".anaEkran"
+            android:exported="false" />
+        <activity
+            android:name=".baslangicEkrani"
+            android:exported="true"
+            android:theme="@style/Theme.Animation1">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+
+        <service
+            android:name=".MediaPlayerService"
+            android:enabled="true"
+            android:exported="false" />
+    </application>
+
+</manifest>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A9A9A9"
+    tools:context=".anaEkran">
+
+    <ImageButton
+        android:id="@+id/sarkilarButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="19dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/sarkilarTextView"
+        app:layout_constraintEnd_toEndOf="@+id/calmaListesiButton"
+        app:layout_constraintStart_toStartOf="@+id/calmaListesiButton"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
+        app:srcCompat="@drawable/sarkilar" />
+
+    <ImageButton
+        android:id="@+id/calmaListesiButton"
+        android:layout_width="125dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="48dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/calmaListesiTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sarkilarTextView"
+        app:srcCompat="@drawable/calmalistesi" />
+
+    <TextView
+        android:id="@+id/sarkilarTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="53dp"
+        android:text="Şarkılar"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/calmaListesiButton"
+        app:layout_constraintStart_toStartOf="@+id/sarkilarButton"
+        app:layout_constraintTop_toBottomOf="@+id/sarkilarButton" />
+
+    <TextView
+        android:id="@+id/calmaListesiTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="206dp"
+        android:text="Çalma Listesi"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/calmaListesiButton"
+        app:layout_constraintTop_toBottomOf="@+id/calmaListesiButton" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="97dp"
+        android:background="#808080"
+        app:layout_constraintBottom_toTopOf="@+id/sarkilarButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="MELODaYF"
+            android:textColor="@android:color/black"
+            android:textLocale=""
+            android:textSize="25sp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginEnd="22dp"
+            android:layout_toStartOf="@+id/textViewTitle"
+            app:srcCompat="@drawable/logo" />
+
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
