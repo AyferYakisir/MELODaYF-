@@ -1,3 +1,0 @@
-com.ayfer.proje.test
-style WhiteBackgroundDialogTheme
-style WhiteBackgroundTheme
